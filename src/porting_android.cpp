@@ -72,7 +72,7 @@ extern "C" {
 	JNIEXPORT void JNICALL Java_net_minetest_MtNativeActivity_putMessageBoxResult(
 			JNIEnv * env, jclass thiz, jstring text)
 	{
-		errorstream << "Java_net_minetest_MtNativeActivity_putMessageBoxResult got: "
+		errorstream << "Java_online_ksandr_mine_MtNativeActivity_putMessageBoxResult got: "
 				<< std::string((const char*)env->GetStringChars(text,0))
 				<< std::endl;
 	}
@@ -136,7 +136,7 @@ void initAndroid()
 		exit(-1);
 	}
 
-	nativeActivity = findClass("net/minetest/minetest/MtNativeActivity");
+	nativeActivity = findClass("online/ksandr/mine/MtNativeActivity");
 	if (nativeActivity == 0) {
 		errorstream <<
 			"porting::initAndroid unable to find java native activity class" <<
@@ -147,7 +147,7 @@ void initAndroid()
 	/* in the start-up code */
 	__android_log_print(ANDROID_LOG_ERROR, PROJECT_NAME_C,
 			"Initializing GPROF profiler");
-	monstartup("libminetest.so");
+	monstartup("libmine.so");
 #endif
 }
 
