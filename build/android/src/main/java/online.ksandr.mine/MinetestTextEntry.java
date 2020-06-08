@@ -1,4 +1,4 @@
-package net.minetest.minetest;
+package online.ksandr.mine;
 
 import android.app.Activity;
 import android.app.AlertDialog;

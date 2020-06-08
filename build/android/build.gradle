@@ -32,8 +32,8 @@ android {
 		versionName "${System.env.VERSION_STR}.${versionCode}"
 		minSdkVersion 14
 		targetSdkVersion 29
-		applicationId "net.minetest.minetest"
-		manifestPlaceholders = [package: "net.minetest.minetest", project: project.name]
+		applicationId "online.ksandr.mine"
+		manifestPlaceholders = [package: "online.ksandr.mine", project: project.name]
 		ndk {
 			// Specifies the ABI configurations of your native
 			// libraries Gradle should build and package with your APK.

@@ -6,8 +6,8 @@ if(${CMAKE_VERSION} STREQUAL "2.8.2")
 endif()
 
 # This can be read from ${PROJECT_NAME} after project() is called
-project(minetest)
-set(PROJECT_NAME_CAPITALIZED "Minetest")
+project(mine)
+set(PROJECT_NAME_CAPITALIZED "mine")
 
 # Works only for cmake 3.1 and greater
 set(CMAKE_CXX_STANDARD 11)
@@ -18,12 +18,13 @@ set(CLANG_MINIMUM_VERSION "3.4")
 set(VERSION_MAJOR 5)
 set(VERSION_MINOR 2)
 set(VERSION_PATCH 0)
+set(VERSION_ksandr 1)
 set(VERSION_EXTRA "" CACHE STRING "Stuff to append to version string")
 
 # Change to false for releases
 set(DEVELOPMENT_BUILD FALSE)
 
-set(VERSION_STRING "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}")
+set(VERSION_STRING "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}-${VERSION_ksandr}")
 if(VERSION_EXTRA)
 	set(VERSION_STRING ${VERSION_STRING}-${VERSION_EXTRA})
 elseif(DEVELOPMENT_BUILD)

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6)
 
-project(minetest)
+project(mine)
 
 INCLUDE(CheckIncludeFiles)
 INCLUDE(CheckLibraryExists)

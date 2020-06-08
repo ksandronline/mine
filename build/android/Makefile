@@ -696,7 +696,7 @@ apk: local.properties assets $(ICONV_LIB) $(IRRLICHT_LIB) $(CURL_LIB) $(LEVELDB_
 	export VERSION_STR="${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}" && \
 	export BUILD_TYPE_C=$$(echo "$${BUILD_TYPE}" | sed 's/./\U&/') &&          \
 	./gradlew assemble$$BUILD_TYPE_C &&                                           \
-	echo "APK stored at: build/outputs/apk/$$BUILD_TYPE/Minetest-$$BUILD_TYPE.apk" && \
+	echo "APK stored at: build/outputs/apk/$$BUILD_TYPE/mine-$$BUILD_TYPE.apk" && \
 	echo "You can install it with \`make install_$$BUILD_TYPE\`"
 
 # These Intentionally doesn't depend on their respective build steps,

@@ -1,4 +1,4 @@
-package net.minetest.minetest;
+package online.ksandr.mine;
 
 import android.Manifest;
 import android.app.Activity;
