@@ -22,7 +22,7 @@
 			android:value="2.4" />
 
 		<activity
-			android:name=".MainActivity"
+			android:name="online.ksandr.mine.MainActivity"
 			android:configChanges="orientation|keyboardHidden|navigation|screenSize"
 			android:label="${project}"
 			android:launchMode="singleTask"
@@ -34,7 +34,7 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name=".MtNativeActivity"
+			android:name="online.ksandr.mine.MtNativeActivity"
 			android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize|smallestScreenSize"
 			android:hardwareAccelerated="true"
 			android:launchMode="singleTask"
@@ -45,15 +45,15 @@
 			</intent-filter>
 			<meta-data
 				android:name="android.app.lib_name"
-				android:value="minetest" />
+				android:value="mine" />
 		</activity>
 		<activity
-			android:name=".MinetestTextEntry"
+			android:name="online.ksandr.mine.MinetestTextEntry"
 			android:configChanges="keyboardHidden|orientation|screenSize"
 			android:theme="@style/Theme.Dialog"
 			android:windowSoftInputMode="stateAlwaysHidden" />
 		<activity
-			android:name=".MinetestAssetCopy"
+			android:name="online.ksandr.mine.MinetestAssetCopy"
 			android:screenOrientation="sensorLandscape"
 			android:theme="@style/AppTheme" />
 	</application>
