@@ -15,7 +15,7 @@ public class MtNativeActivity extends NativeActivity {
 		System.loadLibrary("ogg");
 		System.loadLibrary("vorbis");
 		System.loadLibrary("iconv");
-		System.loadLibrary("minetest");
+		System.loadLibrary("mine");
 	}
 
 	private int m_MessagReturnCode;
