@@ -80,7 +80,7 @@ task copyAssets {
 	dependsOn 'cleanAssets'
 	mkdir "src/main/assets"
 
-	def mtAssetsFolder = "src/main/assets/Minetest"
+	def mtAssetsFolder = "src/main/assets/mine"
 	def projRoot = "../.."
 	def gameToCopy = "minetest_game"
 
