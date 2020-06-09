@@ -69,10 +69,10 @@ void android_main(android_app *app)
 /* TODO this doesn't work as expected, no idea why but there's a workaround   */
 /* for it right now */
 extern "C" {
-	JNIEXPORT void JNICALL Java_net_minetest_MtNativeActivity_putMessageBoxResult(
+	JNIEXPORT void JNICALL Java_online_ksandr_MtNativeActivity_putMessageBoxResult(
 			JNIEnv * env, jclass thiz, jstring text)
 	{
-		errorstream << "Java_online_ksandr_mine_MtNativeActivity_putMessageBoxResult got: "
+		errorstream << "Java_online_ksandr_MtNativeActivity_putMessageBoxResult got: "
 				<< std::string((const char*)env->GetStringChars(text,0))
 				<< std::endl;
 	}
