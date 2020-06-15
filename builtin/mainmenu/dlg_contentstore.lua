@@ -30,16 +30,16 @@ local cur_page = 1
 local num_per_page = 5
 local filter_type = 1
 local filter_types_titles = {
-	fgettext("All packages"),
+--	fgettext("All packages"),
 	fgettext("Games"),
-	fgettext("Mods"),
+--	fgettext("Mods"),
 	fgettext("Texture packs"),
 }
 
 local filter_types_type = {
-	nil,
+--	nil,
 	"game",
-	"mod",
+--	"mod",
 	"txp",
 }
 

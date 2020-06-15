@@ -40,7 +40,7 @@ dofile(menupath .. DIR_DELIM .. "textures.lua")
 
 dofile(menupath .. DIR_DELIM .. "dlg_config_world.lua")
 dofile(menupath .. DIR_DELIM .. "dlg_settings_advanced.lua")
-dofile(menupath .. DIR_DELIM .. "dlg_contentstore.lua")
+--dofile(menupath .. DIR_DELIM .. "dlg_contentstore.lua")
 if menustyle ~= "simple" then
 	dofile(menupath .. DIR_DELIM .. "dlg_create_world.lua")
 	dofile(menupath .. DIR_DELIM .. "dlg_delete_content.lua")
@@ -49,9 +49,9 @@ if menustyle ~= "simple" then
 end
 
 local tabs = {}
-
+tabs.mine = dofile(menupath .. DIR_DELIM .. "tab_mine.lua")
 tabs.settings = dofile(menupath .. DIR_DELIM .. "tab_settings.lua")
-tabs.content  = dofile(menupath .. DIR_DELIM .. "tab_content.lua")
+--tabs.content  = dofile(menupath .. DIR_DELIM .. "tab_content.lua")
 tabs.credits  = dofile(menupath .. DIR_DELIM .. "tab_credits.lua")
 if menustyle == "simple" then
 	tabs.simple_main = dofile(menupath .. DIR_DELIM .. "tab_simple_main.lua")
@@ -127,7 +127,7 @@ local function init_globals()
 
 	-- Create main tabview
 	local tv_main = tabview_create("maintab", {x = 12, y = 5.4}, {x = 0, y = 0})
-
+	tv_main:add(tabs.mine)
 	if menustyle == "simple" then
 		tv_main:add(tabs.simple_main)
 	else
@@ -136,7 +136,7 @@ local function init_globals()
 		tv_main:add(tabs.play_online)
 	end
 
-	tv_main:add(tabs.content)
+	--tv_main:add(tabs.content)
 	tv_main:add(tabs.settings)
 	tv_main:add(tabs.credits)
 

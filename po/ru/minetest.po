@@ -6896,6 +6896,29 @@ msgstr "Лимит одновременных соединений cURL"
 msgid "cURL timeout"
 msgstr "cURL тайм-аут"
 
+#: builtin/mainmenu/tab_mine.lua
+msgid "System required:"
+msgstr "Системные требования:"
+
+#: builtin/mainmenu/tab_mine.lua
+msgid "mine"
+msgstr "майн"
+
+#: builtin/mainmenu/tab_mine.lua
+msgid ""
+"Step by step, explore a new world.\n
+Discover new crafting recipes.\n
+Build cities together or survive alone.\n
+Activate the portal to hell and get new materials.\n
+Find the portal to Ender world on the highest peak..."
+msgstr ""
+"Шаг за шагом исследуйте новый мир.\n
+Открывайте новые рецепты крафта.\n
+Стройте города вместе или выживайте в одиночку.\n
+Активируйте портал в ад и получите новые материалы.\n
+Найдите на самой высокой вершине портал в эндер мир..."
+
+
 #~ msgid ""
 #~ "Adjust the gamma encoding for the light tables. Higher numbers are "
 #~ "brighter.\n"
